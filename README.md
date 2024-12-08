@@ -1,62 +1,72 @@
-# Google Docs Font Formatter
+# 📜 Google Apps Scripts Collection
 
-A versatile Google Apps Script for Google Docs that allows users to automate the process of changing specific font styles, colors, and font families according to user preferences. This script was created because Google Docs does not natively provide this functionality, and it is much faster than manually updating text in multiple places.
+Welcome to the **Google Apps Scripts Collection** repository! This repository contains a suite  Google Apps Script created to replace some annoying tasks in Google Docs. These scripts save time and effort on repetitive tasks and improve efficiency.
 
-## Features
+## 📂 Scripts Included
 
-- Target specific fonts in a Google Docs document and change them to a new font, color, and style.
-- Configurable settings for font type, text color, and styles such as italics, bold, and underline.
-- Easy to integrate and use with any Google Docs document.
+### ✨ 1. Google Docs Font Formatter
 
-## Setup
+A script that automates the process of changing specific font styles, colors, and font families in Google Docs. This tool is ideal for users who need consistent formatting for highlighted text across large documents.
+
+- **Features**:
+  - 🎨 Target and change specific fonts, colors, and styles including italics, bold, and underline.
+  - ⚙️ Customizable settings to suit individual document needs.
+  
+- **Use Case**:
+  - Created to address the lack of native bulk font formatting in Google Docs, making it faster than manual updates.
+
+---
+
+### 🔍 2. Pattern Remover Script
+
+A script to find and remove specific text patterns in Google Docs, like "in Appendix <letter>", including a trailing space. It ensures the rest of the document formatting is preserved while efficiently cleaning up unwanted text.
+
+- **Features**:
+  - 🧹 Uses regular expressions to identify and remove specified patterns.
+  - 🛡️ Maintains existing text formatting in the document.
+  
+- **Use Case**:
+  - Developed for scenarios where removing repetitive patterns can save substantial editing time.
+
+## 🚀 Setup and Installation
 
 ### Prerequisites
 
-- Google Account
-- Access to Google Docs and Google Apps Script
+- ✅ Google Account
+- ✅ Access to Google Docs and Google Apps Script editor.
 
-### Installation
+### Installation Steps
 
 1. **Open Your Google Document**:
-   - Open the Google Doc you want to apply the script to.
+   - 📂 Go to the Google Doc where you want to use the script.
 
 2. **Access Google Apps Script Editor**:
-   - Click on `Extensions` in the menu.
-   - Select `Apps Script`.
+   - 🛠️ Click on `Extensions` > `Apps Script`.
 
 3. **Add the Script**:
-   - Delete any existing code in the editor.
-   - Copy and paste the contents of `fontFormatter.gs` into the script editor.
+   - ✏️ Copy and paste the desired script from this repository into the Apps Script editor.
 
 4. **Configure the Script**:
-   - Set the following constants in the script:
-     - `FONT_TO_CHANGE`: Specify the font you want to target (e.g., `'Roboto Mono'`).
-     - `NEW_FONT`: The font you want to apply (e.g., `'Arial'`).
-     - `NEW_COLOR`: The hex color code you want to apply (e.g., `'#000000'` for black).
-     - `MAKE_ITALIC`: Set to `true` to apply italics, `false` otherwise.
-     - `MAKE_BOLD`: Set to `true` to apply bold, `false` otherwise.
-     - `MAKE_UNDERLINE`: Set to `true` to apply underline, `false` otherwise.
+   - ⚙️ For the Font Formatter, set constants like `FONT_TO_CHANGE`, `NEW_FONT`, etc.
+   - ⚙️ For the Pattern Remover, no specific configuration is needed as it uses predefined patterns.
 
 5. **Run the Script**:
-   - Click the Run button in the Apps Script editor.
-   - Authorize the script to run if prompted.
+   - ▶️ Click the Run button in the Apps Script editor.
+   - 🔒 Authorize the script if prompted.
 
-## Usage
+## 💡 Motivation
 
-Modify the constants at the start of the script to alter the font, style, and color changes as desired. Run the script to automatically apply these changes to all occurrences of the specified font in your document.
+These scripts were developed during my Level 4 Software Development Apprenticeship. The need came while working on my EPA project, where after I finished the write up, I decided to change the formatting for all highlighted documents and realised that Google Docs does not offer that feature. To change formatting for over 300 words is just BORING and time consuming. So I just decided to use the time to learn something new.
 
-## Motivation
+## 🤝 Contributing
 
-While working on my EPA project, for my Level 4 Software Development Apprenticeship, I decided to change the style of some highlighted words. Google Docs' lack of a bulk formatting feature meant that each change had to be done manually, which was both time-consuming and prone to error. The repetitive nature of this task was BORING. 
+Contributions are welcome! Feel free to submit pull requests or open issues to discuss potential changes or improvements. Whether it’s adding new features, addressing bugs, or expanding the collection, your input is valuable.
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss any changes or improvements.
-
-## License
+## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 - Thanks to the open-source community for guidance and inspiration.
+- Special thanks to [Your Name or Organization] for support and collaboration.

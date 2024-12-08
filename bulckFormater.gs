@@ -1,3 +1,16 @@
+/**
+ * Google Docs Font Formatter
+ *
+ * This script automates the process of changing specific font styles, colors, and font families in a Google Doc.
+ * It allows you to target specific fonts and apply new styles such as italics, bold, and underline.
+ *
+ * @constant {string} FONT_TO_CHANGE - The font family to be replaced.
+ * @constant {string} NEW_FONT - The new font family to apply.
+ * @constant {string} NEW_COLOR - The new text color in hex.
+ * @constant {boolean} MAKE_ITALIC - Set to true to apply italics, false otherwise.
+ * @constant {boolean} MAKE_BOLD - Set to true to apply bold, false otherwise.
+ * @constant {boolean} MAKE_UNDERLINE - Set to true to apply underline, false otherwise.
+ */
 function changeSpecificFormatting() {
   // Configuration variables: Set these to your desired values
   const FONT_TO_CHANGE = 'Roboto Mono';
