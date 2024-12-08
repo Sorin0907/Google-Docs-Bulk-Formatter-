@@ -4,7 +4,7 @@
  * This script automates the process of changing specific font styles, colors, and font families in a Google Doc.
  * It allows you to target specific fonts and apply new styles such as italics, bold, and underline.
  *
- * @constant {string} FONT_TO_CHANGE - The font family to be replaced.
+ * @param {string} FONT_TO_CHANGE - The font family to be replaced.
  * @constant {string} NEW_FONT - The new font family to apply.
  * @constant {string} NEW_COLOR - The new text color in hex.
  * @constant {boolean} MAKE_ITALIC - Set to true to apply italics, false otherwise.
