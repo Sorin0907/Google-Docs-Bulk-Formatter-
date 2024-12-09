@@ -1,5 +1,5 @@
 /**
- * Google Docs Font Formatter
+ * Google Docs Bulk Formatter
  *
  * This script automates the process of changing specific font styles, colors, and font families in a Google Doc.
  * It allows you to target specific fonts and apply new styles such as italics, bold, and underline.
