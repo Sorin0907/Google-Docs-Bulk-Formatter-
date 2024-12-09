@@ -56,7 +56,7 @@ A script to find and remove specific text patterns in Google Docs, like "in Appe
 
 ## 💡 Motivation
 
-These scripts were developed during my Level 4 Software Development Apprenticeship. The need came while working on my EPA project, where after I finished the write up, I decided to change the formatting for all highlighted documents and realised that Google Docs does not offer that feature. To change formatting for over 300 words is just BORING and time consuming. So I just decided to use the time to learn something new.
+These scripts were developed during my Level 4 Software Development Apprenticeship. The need came while working on my EPA project, where after I finished the write up, I decided to change the formatting for certain words that were highlighted with a different font and realised that Google Docs does not offer that feature. To change formatting for over 300 words is just BORING and time consuming. So I just decided to use the time to learn something new.
 
 ## 🤝 Contributing
 
