@@ -4,7 +4,7 @@
  * This script automates the process of changing specific font styles, colors, and font families in a Google Doc.
  * It allows you to target specific fonts and apply new styles such as italics, bold, and underline.
  *
- * @param {string} FONT_TO_CHANGE - The font family to be replaced.
+ * @constant {string} FONT_TO_CHANGE - The font family to be replaced.
  * @constant {string} NEW_FONT - The new font family to apply.
  * @constant {string} NEW_COLOR - The new text color in hex.
  * @constant {boolean} MAKE_ITALIC - Set to true to apply italics, false otherwise.
@@ -36,7 +36,17 @@ function changeSpecificFormatting() {
   }
 }
 
-// Function to format text sections that match the specified font
+/**
+ * Formats specific text sections that match the specified font.
+ *
+ * @param {Text} textElement - A text element from the document to be processed.
+ * @param {string} fontToChange - The font family to search for.
+ * @param {string} newFont - The new font family to apply.
+ * @param {string} newColor - The new text color in hex.
+ * @param {boolean} makeItalic - Apply italics if true.
+ * @param {boolean} makeBold - Apply bold if true.
+ * @param {boolean} makeUnderline - Apply underline if true.
+ */
 function formatSpecifiedFontText(textElement, fontToChange, newFont, newColor, makeItalic, makeBold, makeUnderline) {
   const text = textElement.getText();
   const length = text.length;
@@ -64,7 +74,18 @@ function formatSpecifiedFontText(textElement, fontToChange, newFont, newColor, m
   }
 }
 
-// Function to apply the specified formatting options using ternary operators
+/**
+ * Applies the specified formatting options to a range of text.
+ *
+ * @param {Text} textElement - A text element from the document to be processed.
+ * @param {number} start - The starting index of the text range.
+ * @param {number} end - The ending index of the text range.
+ * @param {string} newFont - The new font family to apply.
+ * @param {string} newColor - The new text color in hex.
+ * @param {boolean} makeItalic - Apply italics if true.
+ * @param {boolean} makeBold - Apply bold if true.
+ * @param {boolean} makeUnderline - Apply underline if true.
+ */
 function applyFormatting(textElement, start, end, newFont, newColor, makeItalic, makeBold, makeUnderline) {
   textElement.setFontFamily(start, end, newFont);
   textElement.setForegroundColor(start, end, newColor);
